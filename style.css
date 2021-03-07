@@ -1,7 +1,130 @@
+:root {
+	--primary: #2512d9;
+	--secondary: #333;
+	--dark: #3a3335;
+}
+
 * {
 	padding: 0;
 	margin: 0 auto;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+}
+li {
+	list-style-type: none;
+}
+a {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+	animation: linkhover 0.5s forwards;
+}
+
+@keyframes linkhover {
+	0% {
+		text-shadow: 0px 0px 0px cyan, 0px 0px 0px red;
+	}
+	100% {
+		text-shadow: 5px 2px 0px cyan, -5px -2px 0px red;
+	}
+}
+
+article {
+	min-height: calc(100vh - 70px);
+	padding-top: 50px;
+}
+
+#navbar {
+	z-index: 99;
+	position: fixed;
+	padding: 0 20px;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#nav-img {
+	margin-left: 0px;
+	max-width: 50px;
+}
+#nav-links {
+	display: flex;
+	margin-right: 0px;
+}
+#nav-links li {
+	margin: 5px 10px;
+}
+#welcome-section {
+	width: 100%;
+	z-index: -5;
+	position: relative;
+	min-height: 100vh;
+	margin-top: 70px;
+	overflow: hidden;
+	background: black;
+	background-attachment: fixed;
+	background-position: center;
+}
+#welcome-section header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	z-index: 10;
+	padding: 20px;
+}
+.box {
+	position: absolute;
+	background: url("./Assets/Background.jpg");
+	background-attachment: fixed;
+}
+.glitch-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url("./Assets/Background.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: 1;
+	z-index: -10;
+}
+
+#projects {
+	z-index: 10;
+}
+#contact {
+	background: black;
+	color: var(--primary);
+	display: flex;
+	flex-direction: column;
+}
+
+#footer {
+	padding: 20px;
+	background: var(--primary);
+	color: white;
+}
+
+@media only screen and (min-width: 480px) {
+	#contact {
+		flex-direction: row;
+	}
+}
+@media only screen and (min-width: 720px) {
 }

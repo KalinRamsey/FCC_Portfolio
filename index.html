@@ -4,9 +4,124 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>FCC_Portfolio</title>
+		<link
+			href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="./style.css" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="mgGlitch.min.js"></script>
 	</head>
 	<body>
+		<nav id="navbar">
+			<img
+				id="nav-img"
+				src="./Assets/KRlogo_NEW3X.png"
+				alt="Kalin Ramsey Logo"
+			/>
+			<ul id="nav-links">
+				<li>
+					<a href="#welcome-section">Home</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<article id="welcome-section">
+			<header>
+				<h1>Good <span id="timeOfDay">Day</span>!</h1>
+				<h2>Text text text</h2>
+			</header>
+			<div id="glitch-img" class="glitch-img"></div>
+		</article>
+		<article id="projects">
+			<section class="project-tile">
+				<img src="" atl="" />
+				<div>
+					<h2>Project Title</h2>
+					<p>Project Description</p>
+					<a href="#" target="_blank">Link</a>
+				</div>
+			</section>
+		</article>
+		<article id="contact">
+			<div>
+				<h2>Contact</h2>
+				<ul>
+					<li>
+						<a
+							id="profile-link"
+							href="https://github.com/KalinRamsey"
+							target="_blank"
+							>GitHub</a
+						>
+						<a href="">FreeCodeCamp</a>
+					</li>
+				</ul>
+			</div>
+			<form>
+				<div class="form-field">
+					<label for="name">Name <span class="req-label">*</span></label>
+					<input type="text" id="name" name="name" required />
+				</div>
+				<div class="form-field">
+					<label for="email">Email <span class="req-label">*</span></label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				<div class="form-field">
+					<label for="phone">Phone</label>
+					<input
+						type="tel"
+						id="phone"
+						name="phone"
+						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+					/>
+				</div>
+				<div class="form-field">
+					<label for="preference"
+						>Preferred <span class="req-label">*</span></label
+					>
+					<p>
+						<input type="radio" id="pref-phone" name="preference" required />
+						Phone
+					</p>
+
+					<p>
+						<input type="radio" id="pref-phone" name="preference" required />
+						Email
+					</p>
+				</div>
+				<div class="form-field">
+					<label for="message">Message <span class="req-label">*</span></label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				</div>
+				<input type="submit" value="Send" />
+			</form>
+		</article>
+		<footer id="footer">
+			<p>All designs © Kalin Ramsey</p>
+			<ul>
+				<li>
+					<a
+						id="profile-link"
+						href="https://github.com/KalinRamsey"
+						target="_blank"
+					>
+						<i class="icon-camera-retro"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<script src="./script.js"></script>
 	</body>
 </html>
