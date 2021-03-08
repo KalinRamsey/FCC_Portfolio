@@ -5,6 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>FCC_Portfolio</title>
 		<link
+			rel="shortcut icon"
+			type="image/jpeg"
+			href="./Assets/KRlogo_NEW3X.png"
+		/>
+		<link
 			href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
 			rel="stylesheet"
 		/>
@@ -28,6 +33,9 @@
 					<a href="#welcome-section">Home</a>
 				</li>
 				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
 					<a href="#projects">Projects</a>
 				</li>
 				<li>
@@ -38,85 +46,236 @@
 
 		<article id="welcome-section">
 			<header>
-				<h1>Good <span id="timeOfDay">Day</span>!</h1>
+				<h1 id="timeText"></h1>
 				<h2>Text text text</h2>
 			</header>
 			<div id="glitch-img" class="glitch-img"></div>
 		</article>
+		<article id="about">
+			<h2 class="sub-header">About Me</h2>
+		</article>
 		<article id="projects">
+			<h2 class="sub-header">Projects</h2>
 			<section class="project-tile">
-				<img src="" atl="" />
-				<div>
-					<h2>Project Title</h2>
-					<p>Project Description</p>
-					<a href="#" target="_blank">Link</a>
+				<img
+					class="project-img"
+					src="https://via.placeholder.com/480x320"
+					atl="Placeholder Image"
+				/>
+				<div class="project-data">
+					<h3 class="project-title">Project Title</h3>
+					<ul class="project-tech">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+					<div class="project-info">
+						<p class="project-desc">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+							Quibusdam maiores obcaecati quae nostrum voluptatibus velit saepe
+							nulla adipisci expedita vitae?
+						</p>
+						<div class="project-links">
+							<a href="#" target="_blank">
+								<i class="icon-link"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="icon-file"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="project-tile">
+				<img
+					class="project-img"
+					src="https://via.placeholder.com/480x320"
+					atl="Placeholder Image"
+				/>
+				<div class="project-data">
+					<h3 class="project-title">Project Title</h3>
+					<ul class="project-tech">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+					<div class="project-info">
+						<p class="project-desc">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Voluptatum unde libero ad excepturi distinctio veniam similique
+							aut illo labore beatae?
+						</p>
+						<div class="project-links">
+							<a href="#" target="_blank">
+								<i class="icon-link"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="icon-file"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="project-tile">
+				<img
+					class="project-img"
+					src="https://via.placeholder.com/480x320"
+					atl="Placeholder Image"
+				/>
+				<div class="project-data">
+					<h3 class="project-title">Project Title</h3>
+					<ul class="project-tech">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+					<div class="project-info">
+						<p class="project-desc">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia hic
+							at nam error enim quisquam voluptate eos voluptatum veniam quod!
+						</p>
+						<div class="project-links">
+							<a href="#" target="_blank">
+								<i class="icon-link"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="icon-file"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="project-tile">
+				<img
+					class="project-img"
+					src="https://via.placeholder.com/480x320"
+					atl="Placeholder Image"
+				/>
+				<div class="project-data">
+					<h3 class="project-title">Project Title</h3>
+					<ul class="project-tech">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+					<div class="project-info">
+						<p class="project-desc">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+							molestiae modi molestias, natus mollitia quia architecto dolorem
+							expedita minima enim.
+						</p>
+						<div class="project-links">
+							<a href="#" target="_blank">
+								<i class="icon-link"></i>
+							</a>
+							<a href="#" target="_blank">
+								<i class="icon-file"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</article>
 		<article id="contact">
-			<div>
-				<h2>Contact</h2>
-				<ul>
-					<li>
-						<a
-							id="profile-link"
-							href="https://github.com/KalinRamsey"
-							target="_blank"
-							>GitHub</a
+			<h2 class="sub-header">Contact</h2>
+			<section id="contact-sect">
+				<div id="contact-info">
+					<ul>
+						<li>
+							<a
+								id="profile-link"
+								href="https://github.com/KalinRamsey"
+								target="_blank"
+								>GitHub</a
+							>
+							<a href="">FreeCodeCamp</a>
+						</li>
+					</ul>
+				</div>
+				<form id="contact-form">
+					<div class="form-field">
+						<label for="name">Name <span class="req-label">*</span></label>
+						<input type="text" id="name" name="name" required />
+					</div>
+					<div class="form-field">
+						<label for="email">Email <span class="req-label">*</span></label>
+						<input type="email" id="email" name="email" required />
+					</div>
+					<div class="form-field">
+						<label for="phone">Phone</label>
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+						/>
+					</div>
+					<div class="form-field">
+						<label for="preference"
+							>Preferred <span class="req-label">*</span></label
 						>
-						<a href="">FreeCodeCamp</a>
-					</li>
-				</ul>
-			</div>
-			<form>
-				<div class="form-field">
-					<label for="name">Name <span class="req-label">*</span></label>
-					<input type="text" id="name" name="name" required />
-				</div>
-				<div class="form-field">
-					<label for="email">Email <span class="req-label">*</span></label>
-					<input type="email" id="email" name="email" required />
-				</div>
-				<div class="form-field">
-					<label for="phone">Phone</label>
-					<input
-						type="tel"
-						id="phone"
-						name="phone"
-						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-					/>
-				</div>
-				<div class="form-field">
-					<label for="preference"
-						>Preferred <span class="req-label">*</span></label
-					>
-					<p>
-						<input type="radio" id="pref-phone" name="preference" required />
-						Phone
-					</p>
+						<p>
+							<input type="radio" id="pref-phone" name="preference" required />
+							Phone
+						</p>
 
-					<p>
-						<input type="radio" id="pref-phone" name="preference" required />
-						Email
-					</p>
-				</div>
-				<div class="form-field">
-					<label for="message">Message <span class="req-label">*</span></label>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				</div>
-				<input type="submit" value="Send" />
-			</form>
+						<p>
+							<input type="radio" id="pref-phone" name="preference" required />
+							Email
+						</p>
+					</div>
+					<div class="form-field">
+						<label for="message"
+							>Message <span class="req-label">*</span></label
+						>
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+						></textarea>
+					</div>
+					<input type="submit" value="Send" />
+				</form>
+			</section>
 		</article>
 		<footer id="footer">
-			<p>All designs © Kalin Ramsey</p>
-			<ul>
+			<p id="copyright">All designs © Kalin Ramsey</p>
+			<ul id="social-links">
 				<li>
 					<a
 						id="profile-link"
 						href="https://github.com/KalinRamsey"
 						target="_blank"
 					>
-						<i class="icon-camera-retro"></i>
+						<i class="icon-github"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						id="profile-link"
+						href="https://www.linkedin.com/in/kalinramsey/"
+						target="_blank"
+					>
+						<i class="icon-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						id="profile-link"
+						href="https://www.facebook.com/profile.php?id=KalinRamsey"
+						target="_blank"
+					>
+						<i class="icon-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						id="profile-link"
+						href="https://twitter.com/KalinRamsey"
+						target="_blank"
+					>
+						<i class="icon-twitter"></i>
 					</a>
 				</li>
 			</ul>
