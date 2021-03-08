@@ -60,6 +60,20 @@ a::selection {
 		text-shadow: 2px 0px 0px cyan, -2px 0px 0px red;
 	}
 }
+@keyframes boxhover {
+	0% {
+		box-shadow: 0px 0px 0px cyan, 0px 0px 0px red;
+	}
+	30% {
+		box-shadow: 5px 0px 0px cyan, -5px 0px 0px red;
+	}
+	50% {
+		box-shadow: 5px 0px 0px cyan, -5px 0px 0px red;
+	}
+	100% {
+		box-shadow: 2px 0px 0px cyan, -2px 0px 0px red;
+	}
+}
 @keyframes subheaderPop {
 	0% {
 		top: 0;
@@ -104,12 +118,80 @@ article {
 	margin-left: 20px;
 	max-width: 50px;
 }
-#nav-links {
-	display: flex;
-	margin-right: 0px;
+.hamburger {
+	position: relative;
+	display: block;
+	width: 35px;
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin-right: 20px;
+	align-self: center;
 }
-#nav-links li {
-	margin: 5px 20px;
+.bar,
+.hamburger:after,
+.hamburger:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 5px;
+	background: white;
+	transition: 0.5s;
+}
+.bar {
+	margin: 6px auto;
+}
+.hamburger.is-active:before {
+	/* transform: rotate(-45deg) translate(0px, 12px); */
+	margin: 0;
+	transform: rotate(90deg) translate(20px, 0px) skewY(-41deg);
+}
+.hamburger.is-active:after {
+	/* transform: rotate(45deg) translate(-3px, -16px); */
+	margin: 0;
+	z-index: 20;
+	transform: rotate(90deg) translate(-20px, 0px) skewY(41deg);
+}
+.hamburger.is-active .bar {
+	/* opacity: 0; */
+	z-index: 50;
+	margin: 0;
+	height: 35px;
+	width: 35px;
+	background: none;
+	border: 3px solid white;
+}
+
+#mobile-nav {
+	z-index: 98;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	padding-top: 120px;
+	transition: 0.5s;
+}
+#mobile-nav.is-active {
+	left: 0;
+}
+#mobile-nav-links {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0 auto;
+}
+#mobile-nav-links li {
+	margin: 50px auto;
+}
+
+#nav-links {
+	display: none;
 }
 #welcome-section {
 	width: 100%;
@@ -123,13 +205,33 @@ article {
 	background-position: center;
 }
 #welcome-section header {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
+	width: 100%;
 	transform: translate(-50%, -50%);
-	background: white;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
 	z-index: 10;
 	padding: 20px;
+}
+#title {
+	z-index: 10;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	top: 60%;
+	left: 50%;
+	min-height: 70px;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	font-size: 1.2em;
+	padding: 10px 20px;
+	animation: linkhover 0.5s forwards;
+	background: black;
+}
+.typewrite {
+	/* color: var(--secondary); */
 }
 .box {
 	position: absolute;
@@ -147,6 +249,7 @@ article {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position-x: 54%;
 	/* filter: hue-rotate(-45deg); */
 	/* filter: saturate(2); */
 	/* filter: contrast(1); */
@@ -156,6 +259,20 @@ article {
 
 #about {
 	background: white;
+	position: relative;
+}
+#about-bg {
+	position: absolute;
+	margin: -20px;
+	width: 100%;
+	height: 100%;
+	background-image: url("./Assets/KRlogo_NEW3X.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 100vh;
+	background-attachment: fixed;
+	filter: saturate(0);
+	opacity: 0.07;
 }
 #about .sub-header {
 	color: white;
@@ -166,6 +283,7 @@ article {
 	background: var(--primary);
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	padding: 10px 10px 60px 10px;
 }
 #projects .sub-header {
@@ -289,6 +407,17 @@ article {
 	}
 }
 @media only screen and (min-width: 720px) {
+	.hamburger {
+		display: none;
+	}
+	#nav-links {
+		display: flex;
+		margin-right: 0px;
+	}
+	#nav-links li {
+		margin: 5px 20px;
+	}
+
 	.project-tile {
 		width: calc(50% - 20px);
 	}
