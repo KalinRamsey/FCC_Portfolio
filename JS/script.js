@@ -121,16 +121,14 @@ window.onload = function () {
 let timeText = document.getElementById("timeText");
 let now = new Date().getHours();
 
-if (now >= 0 && now <= 5) {
-	$(timeText).text("Thanks for stopping by so early!");
-} else if (now >= 6 && now <= 8) {
-	$(timeText).text("Good Morning!");
+if (now >= 0 && now <= 8) {
+	$(timeText).text("Good morning!");
 } else if (now >= 9 && now <= 11) {
-	$(timeText).text("Good Day!");
+	$(timeText).text("Good day!");
 } else if (now >= 12 && now <= 15) {
-	$(timeText).text("Good Afternoon!");
-} else if (now >= 16 && now <= 18) {
-	$(timeText).text("Good Evening!");
-} else if (now >= 19 && now <= 24) {
-	$(timeText).text("Thanks for stopping by so late!");
+	$(timeText).text("Good afternoon!");
+} else if (now >= 16 && now <= 24) {
+	$(timeText).text("Good evening!");
+} else {
+	$(timeText).text("Greetings, Earthling!");
 }

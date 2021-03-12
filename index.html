@@ -17,304 +17,429 @@
 			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./style.css" />
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-		<script src="mgGlitch.min.js"></script>
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<script
+			src="https://kit.fontawesome.com/d9b557025a.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
-		<nav id="navbar">
-			<img
-				id="nav-img"
-				src="./Assets/KRlogo_NEW3X.png"
-				alt="Kalin Ramsey Logo"
-			/>
-
-			<ul id="nav-links">
-				<li>
-					<a href="#welcome-section">Home</a>
-				</li>
-				<li>
-					<a href="#about">About</a>
-				</li>
-				<li>
-					<a href="#projects">Projects</a>
-				</li>
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
-			</ul>
-			<button class="hamburger">
-				<div class="bar"></div>
-			</button>
-		</nav>
-		<nav id="mobile-nav">
-			<ul id="mobile-nav-links">
-				<li>
-					<a href="#welcome-section" class="nav-link">Home</a>
-				</li>
-				<li>
-					<a href="#about" class="nav-link">About</a>
-				</li>
-				<li>
-					<a href="#projects" class="nav-link">Projects</a>
-				</li>
-				<li>
-					<a href="#contact" class="nav-link">Contact</a>
-				</li>
-			</ul>
-		</nav>
-
-		<article id="welcome-section">
-			<header>
-				<h3 id="timeText"></h3>
-				<h1>My name is Kalin Ramsey</h1>
-			</header>
-			<h1 id="title">
-				<a
-					href=""
-					class="typewrite"
-					data-period="2000"
-					data-type='[ "Web Developer", "Graphic Designer", "Illustrator", "World Traveler"]'
-				>
-					<span class="wrap"></span>
-				</a>
-			</h1>
-			<div id="glitch-img" class="glitch-img"></div>
-		</article>
-
-		<article id="about">
-			<h2 class="sub-header">About Me</h2>
-			<div id="about-bg"></div>
-		</article>
-
-		<article id="projects">
-			<h2 class="sub-header">Projects</h2>
-			<section class="project-tile">
+		<div id="container">
+			<nav id="navbar">
 				<img
-					class="project-img"
-					src="https://via.placeholder.com/480x320"
-					atl="Placeholder Image"
+					id="nav-img"
+					src="./Assets/KRlogo_NEW3X.png"
+					alt="Kalin Ramsey Logo"
 				/>
-				<div class="project-data">
-					<h3 class="project-title">Project Title</h3>
-					<ul class="project-tech">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
-					<div class="project-info">
-						<p class="project-desc">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Quibusdam maiores obcaecati quae nostrum voluptatibus velit saepe
-							nulla adipisci expedita vitae?
-						</p>
-						<div class="project-links">
-							<a href="#" target="_blank">
-								<i class="icon-link"></i>
-							</a>
-							<a href="#" target="_blank">
-								<i class="icon-file"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="project-tile">
-				<img
-					class="project-img"
-					src="https://via.placeholder.com/480x320"
-					atl="Placeholder Image"
-				/>
-				<div class="project-data">
-					<h3 class="project-title">Project Title</h3>
-					<ul class="project-tech">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
-					<div class="project-info">
-						<p class="project-desc">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Voluptatum unde libero ad excepturi distinctio veniam similique
-							aut illo labore beatae?
-						</p>
-						<div class="project-links">
-							<a href="#" target="_blank">
-								<i class="icon-link"></i>
-							</a>
-							<a href="#" target="_blank">
-								<i class="icon-file"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="project-tile">
-				<img
-					class="project-img"
-					src="https://via.placeholder.com/480x320"
-					atl="Placeholder Image"
-				/>
-				<div class="project-data">
-					<h3 class="project-title">Project Title</h3>
-					<ul class="project-tech">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
-					<div class="project-info">
-						<p class="project-desc">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia hic
-							at nam error enim quisquam voluptate eos voluptatum veniam quod!
-						</p>
-						<div class="project-links">
-							<a href="#" target="_blank">
-								<i class="icon-link"></i>
-							</a>
-							<a href="#" target="_blank">
-								<i class="icon-file"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="project-tile">
-				<img
-					class="project-img"
-					src="https://via.placeholder.com/480x320"
-					atl="Placeholder Image"
-				/>
-				<div class="project-data">
-					<h3 class="project-title">Project Title</h3>
-					<ul class="project-tech">
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
-					<div class="project-info">
-						<p class="project-desc">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-							molestiae modi molestias, natus mollitia quia architecto dolorem
-							expedita minima enim.
-						</p>
-						<div class="project-links">
-							<a href="#" target="_blank">
-								<i class="icon-link"></i>
-							</a>
-							<a href="#" target="_blank">
-								<i class="icon-file"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</article>
-		<article id="contact">
-			<h2 class="sub-header">Contact</h2>
-			<section id="contact-sect">
-				<div id="contact-info">
-					<ul>
-						<li>
-							<a
-								id="profile-link"
-								href="https://github.com/KalinRamsey"
-								target="_blank"
-								>GitHub</a
-							>
-							<a href="">FreeCodeCamp</a>
-						</li>
-					</ul>
-				</div>
-				<form id="contact-form">
-					<div class="form-field">
-						<label for="name">Name <span class="req-label">*</span></label>
-						<input type="text" id="name" name="name" required />
-					</div>
-					<div class="form-field">
-						<label for="email">Email <span class="req-label">*</span></label>
-						<input type="email" id="email" name="email" required />
-					</div>
-					<div class="form-field">
-						<label for="phone">Phone</label>
-						<input
-							type="tel"
-							id="phone"
-							name="phone"
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-						/>
-					</div>
-					<div class="form-field">
-						<label for="preference"
-							>Preferred <span class="req-label">*</span></label
+
+				<ul id="nav-links">
+					<li>
+						<a href="#welcome-section">Home</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+				<button class="hamburger">
+					<div class="bar"></div>
+				</button>
+			</nav>
+			<nav id="mobile-nav">
+				<ul id="mobile-nav-links">
+					<li>
+						<a href="#welcome-section" class="nav-link">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="nav-link">About</a>
+					</li>
+					<li>
+						<a href="#projects" class="nav-link">Projects</a>
+					</li>
+					<li>
+						<a href="#contact" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<article id="welcome-section">
+				<header>
+					<span id="timeText"></span>
+					<h1>My name is <span id="splitter"></span>Kalin Ramsey</h1>
+					<span id="title-static">I'm really into</span>
+				</header>
+				<div id="title-wrapper">
+					<h1 id="title">
+						<a
+							href=""
+							class="typewrite"
+							data-period="2000"
+							data-type='[ "Web Development", "Graphic Design", "Illustration"]'
 						>
-						<p>
-							<input type="radio" id="pref-phone" name="preference" required />
-							Phone
-						</p>
+							<span class="wrap"></span>
+						</a>
+					</h1>
+				</div>
 
-						<p>
-							<input type="radio" id="pref-phone" name="preference" required />
-							Email
-						</p>
-					</div>
-					<div class="form-field">
-						<label for="message"
-							>Message <span class="req-label">*</span></label
-						>
-						<textarea
-							name="message"
-							id="message"
-							cols="30"
-							rows="10"
-						></textarea>
-					</div>
-					<input type="submit" value="Send" />
-				</form>
-			</section>
-		</article>
+				<div id="glitch-img" class="glitch-img"></div>
+			</article>
 
-		<footer id="footer">
-			<p id="copyright">All designs © Kalin Ramsey</p>
-			<ul id="social-links">
-				<li>
-					<a
-						id="profile-link"
-						href="https://github.com/KalinRamsey"
-						target="_blank"
+			<article id="about">
+				<h2 class="sub-header">About Me</h2>
+				<div id="about-bg"></div>
+				<div id="about-data">
+					<img
+						id="about-img"
+						src="./Assets/ProfilePic_NEW.jpg"
+						alt="Kalin Ramsey's dashing profile picture"
+					/>
+					<div id="about-info">
+						<section>
+							<h3 class="about-header">Who I Am</h3>
+							<p class="about-txt">
+								I'm a full-stack developer with a proven background in art and
+								design who loves thinking outside the box. I am eager to
+								contribute to innovative growth-driven products and services.
+							</p>
+						</section>
+						<section>
+							<h3 class="about-header">What I Do</h3>
+							<ul id="about-skills">
+								<li>
+									<i class="icon-html5"></i>
+									<p>HTML 5</p>
+								</li>
+								<li>
+									<i class="icon-css3"></i>
+									<p>CSS 3</p>
+								</li>
+
+								<li>
+									<i class="fab fa-js-square"></i>
+									<p>JavaScript</p>
+								</li>
+								<li>
+									<i class="fab fa-java"></i>
+									<p>Java</p>
+								</li>
+								<li>
+									<i class="icon-github"></i>
+									<p>Github</p>
+								</li>
+								<li>
+									<i class="fab fa-react"></i>
+									<p>ReactJS</p>
+								</li>
+								<li>
+									<i class="fab fa-node-js"></i>
+									<p>Node</p>
+								</li>
+								<li>
+									<i class="fab fa-wordpress"></i>
+									<p>WordPress</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</article>
+
+			<article id="projects">
+				<h2 class="sub-header">Projects</h2>
+				<div id="project-bg"></div>
+				<div id="projects-container">
+					<section class="project-tile">
+						<div class="imgbox">
+							<img
+								class="project-img"
+								src="./Assets/FAVR_Screenshot.jpg"
+								atl="Screenshot of the FAVR app main menu"
+							/>
+						</div>
+						<div class="project-data">
+							<h3 class="project-title">FAVR Web App</h3>
+							<ul class="project-tech">
+								<li>PostgreSQL</li>
+								<li>ReactJS</li>
+								<li>NodeJS</li>
+								<li>ExpressJS</li>
+								<li>CSS3</li>
+							</ul>
+							<div class="project-info">
+								<p class="project-desc">
+									Allows users to assign requests (Favors) to other users while
+									presenting a visual record of Favors received, requested, and
+									completed.
+								</p>
+								<div class="project-links">
+									<a
+										href="https://favr-app-kramseyart.vercel.app/"
+										target="_blank"
+									>
+										<i class="icon-link"></i>
+										DEMO
+									</a>
+									<a
+										href="https://github.com/KalinRamsey/23.4_FAVR-Client"
+										target="_blank"
+									>
+										<i class="icon-code"></i>
+										REPO
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="project-tile">
+						<div class="imgbox">
+							<img
+								class="project-img"
+								src="./Assets/EncycloBestiary_Screenshot.jpg"
+								atl="Screenshot of the Encyclo•Bestiary web app's homepage"
+							/>
+						</div>
+						<div class="project-data">
+							<h3 class="project-title">Encyclo•Bestiary Web App</h3>
+							<ul class="project-tech">
+								<li>PostgreSQL</li>
+								<li>ReactJS</li>
+								<li>NodeJS</li>
+								<li>ExpressJS</li>
+								<li>CSS3</li>
+							</ul>
+							<div class="project-info">
+								<p class="project-desc">
+									This tool helps world-builders organize groups of information
+									on the cities, monsters, magic, and various other fantastical
+									elements they envision.
+								</p>
+								<div class="project-links">
+									<a
+										href="https://encyclo-bestiary-app-kramseyart.vercel.app/"
+										target="_blank"
+									>
+										<i class="icon-link"></i>
+										DEMO
+									</a>
+									<a
+										href="https://github.com/KalinRamsey/19.5_Encyclo-Bestiary-Client"
+										target="_blank"
+									>
+										<i class="icon-code"></i>
+										REPO
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="project-tile">
+						<div class="imgbox">
+							<img
+								class="project-img"
+								src="./Assets/CookAlongApp_Screenshot.jpg"
+								atl="Screenshot of the Cook Along web app in action"
+							/>
+						</div>
+						<div class="project-data">
+							<h3 class="project-title">Cook-Along Web App</h3>
+							<ul class="project-tech">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+								<li>TheMealDB API</li>
+								<li>YouTube API</li>
+							</ul>
+							<div class="project-info">
+								<p class="project-desc">
+									This recipe finding app presents users with video tutorials
+									for how to prepare specific dishes, or slight variations based
+									on their ingredients at home.
+								</p>
+								<div class="project-links">
+									<a
+										href="https://kalinramsey.github.io/Cook-Along-App/"
+										target="_blank"
+									>
+										<i class="icon-link"></i>
+										DEMO
+									</a>
+									<a
+										href="https://github.com/KalinRamsey/Cook-Along-App"
+										target="_blank"
+									>
+										<i class="icon-code"></i>
+										REPO
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="project-tile">
+						<div class="imgbox">
+							<img
+								class="project-img"
+								src="./Assets/EgyptianQuiz_Screenshot.jpg"
+								atl="Screenshot of the Egyptian Quiz home page"
+							/>
+						</div>
+						<div class="project-data">
+							<h3 class="project-title">Egyptian Deities Quiz</h3>
+							<ul class="project-tech">
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>JavaScript</li>
+								<li>jQuery</li>
+							</ul>
+							<div class="project-info">
+								<p class="project-desc">
+									A quiz consisting of 10 questions, in which the order of
+									questions is randomized and score is tracked until completion,
+									at which point it is cleared and a retry option is presented.
+								</p>
+								<div class="project-links">
+									<a
+										href="https://kalinramsey.github.io/Thinkful_QuizApp/"
+										target="_blank"
+									>
+										<i class="icon-link"></i>
+										DEMO
+									</a>
+									<a
+										href="https://github.com/KalinRamsey/Thinkful_QuizApp"
+										target="_blank"
+									>
+										<i class="icon-code"></i>
+										REPO
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</article>
+
+			<article id="contact">
+				<h2 class="sub-header">Contact</h2>
+				<div id="contact-bg"></div>
+				<section id="contact-sect">
+					<div id="contact-info">
+						<h3>
+							If you like what you see and want to talk shop, feel free to
+							connect with me through email or social media
+						</h3>
+						<ul id="social-links">
+							<li>
+								<a
+									id="profile-link"
+									href="https://github.com/KalinRamsey"
+									target="_blank"
+								>
+									<i class="icon-github"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									id="profile-link"
+									href="https://www.linkedin.com/in/kalinramsey/"
+									target="_blank"
+								>
+									<i class="icon-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									id="profile-link"
+									href="https://www.facebook.com/profile.php?id=KalinRamsey"
+									target="_blank"
+								>
+									<i class="icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									id="profile-link"
+									href="https://twitter.com/KalinRamsey"
+									target="_blank"
+								>
+									<i class="icon-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<form
+						id="contact-form"
+						action="https://formspree.io/f/xrgonllb"
+						method="POST"
 					>
-						<i class="icon-github"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						id="profile-link"
-						href="https://www.linkedin.com/in/kalinramsey/"
-						target="_blank"
-					>
-						<i class="icon-linkedin"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						id="profile-link"
-						href="https://www.facebook.com/profile.php?id=KalinRamsey"
-						target="_blank"
-					>
-						<i class="icon-facebook"></i>
-					</a>
-				</li>
-				<li>
-					<a
-						id="profile-link"
-						href="https://twitter.com/KalinRamsey"
-						target="_blank"
-					>
-						<i class="icon-twitter"></i>
-					</a>
-				</li>
-			</ul>
-		</footer>
+						<div class="form-row">
+							<div class="form-field">
+								<input type="text" id="name" name="name" required />
+								<div class="underline"></div>
+								<label for="name"
+									>First Name <span class="req-label">*</span></label
+								>
+							</div>
+							<div class="form-field">
+								<input type="text" id="name" name="name" required />
+								<div class="underline"></div>
+								<label for="name"
+									>Last Name <span class="req-label">*</span></label
+								>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-field">
+								<input type="email" id="email" name="email" required />
+								<div class="underline"></div>
+								<label for="email"
+									>Email <span class="req-label">*</span></label
+								>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-field textarea">
+								<textarea
+									name="message"
+									id="message"
+									cols="30"
+									rows="10"
+									required
+								></textarea>
+								<div class="underline"></div>
+								<label for="message"
+									>Message <span class="req-label">*</span></label
+								>
+							</div>
+						</div>
+
+						<div class="form-row submit-btn">
+							<div class="form-field">
+								<div class="inner"></div>
+								<input id="submit-btn" type="submit" value="Send" />
+							</div>
+						</div>
+					</form>
+				</section>
+				<footer id="footer">
+					<p id="copyright">
+						This website and all projects are designed by and © Kalin Ramsey.
+						All rights reserved.
+					</p>
+				</footer>
+			</article>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-		<script src="./script.js"></script>
+		<script src="./JS/mgGlitch.min.js"></script>
+		<script src="./JS/script.js"></script>
 	</body>
 </html>
